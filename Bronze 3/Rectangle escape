@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args)  {
+
+
+        Scanner scan = new Scanner(System.in);
+
+        int X = scan.nextInt();
+        int Y = scan.nextInt();
+        int W = scan.nextInt();
+        int H = scan.nextInt();
+
+        int widMin = (W-X) < X ? (W-X) : X;
+        int heiMin = (H-Y) < Y ? (H-Y) : Y;
+
+        if (widMin < heiMin){
+            System.out.println(widMin);
+        }
+        else{
+            System.out.println(heiMin);
+        }
+
+        }
+}
